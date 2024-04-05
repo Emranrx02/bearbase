@@ -22,7 +22,7 @@ export default function Community({
   }, [scrollPositions]);
 
   return (
-    <div className="h-[100vh]  overflow-hidden  w-full">
+    <div className="h-[60rem]  overflow-hidden  w-full">
       <div
         //@ts-ignore
         ref={barRef}
