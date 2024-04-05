@@ -32,7 +32,7 @@ export default function HeadingSection() {
   return (
     <header
       onMouseMove={onMouseMove}
-      className="relative  w-full  h-[100vh] overflow-hidden"
+      className="relative  w-full h-[70rem] sm:h-[60rem] overflow-hidden"
     >
       <Image
         //@ts-ignore
