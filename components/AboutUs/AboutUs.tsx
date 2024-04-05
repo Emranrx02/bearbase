@@ -22,14 +22,14 @@ export default function AboutUs({
   }, [scrollPositions]);
 
   return (
-    <div className="h-[100vh]  overflow-hidden  w-full">
+    <div className="h-[100vh]  overflow-hidden   w-full">
       <div
         //@ts-ignore
         ref={barRef}
-        className="relative  h-full"
+        className="relative   h-full"
       >
         <svg
-          className="w-[65rem]  absolute top-[60%] left-[65%] -translate-x-[50%] -translate-y-[10%]"
+          className=" w-full  absolute top-[60%] left-[65%] -translate-x-[50%] -translate-y-[10%]"
           viewBox="0 0 630 316"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
