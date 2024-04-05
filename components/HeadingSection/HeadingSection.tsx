@@ -57,8 +57,8 @@ export default function HeadingSection() {
         ref={wave3}
         className="absolute sm:object-fill object-cover w-full h-full  z-20 top-[24rem]"
         src={"/wave1.png"}
-        width={500}
-        height={500}
+        width={1920}
+        height={1080}
         quality={100}
         alt="wave-2"
       />
