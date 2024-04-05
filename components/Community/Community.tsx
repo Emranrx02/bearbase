@@ -13,7 +13,7 @@ export default function Community({
     if (scrollPositions > 2600) {
       //@ts-ignore
       barRef.current.style.transform = `scale(${
-        1 - 130 * (scrollPositions / 1000000)
+        1 - 200 * (scrollPositions / 1000000)
       })`;
     } else {
       //@ts-ignore
@@ -26,7 +26,7 @@ export default function Community({
       <div
         //@ts-ignore
         ref={barRef}
-        className="relative transition-all h-full"
+        className="relative ice h-full"
       >
         <svg
           className="w-[65rem]  absolute top-[60%] left-[55%] -translate-x-[50%] -translate-y-[10%]"

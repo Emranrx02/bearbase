@@ -1,22 +1,24 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Tokenomics({
   scrollPositions,
 }: {
   scrollPositions: number;
 }) {
+  const [isWorked, setWorked] = useState(0);
   const barRef = useRef();
   useEffect(() => {
     if (!barRef.current) return;
     if (scrollPositions > 1600) {
       //@ts-ignore
       barRef.current.style.transform = `scale(${
-        1 - 23 * (scrollPositions / 100000)
+        1 - 25 * (scrollPositions / 100000)
       })`;
+      setWorked(12);
     } else {
       //@ts-ignore
-      barRef.current.style.transform = `scale(${1})`;
+      barRef.current.style.transform = `scale(1)`;
     }
   }, [scrollPositions]);
 
@@ -25,7 +27,7 @@ export default function Tokenomics({
       <div
         //@ts-ignore
         ref={barRef}
-        className="relative transition-all h-full"
+        className="relative ice h-full"
       >
         <svg
           className="w-[65rem]  absolute top-[60%] left-[40%] -translate-x-[50%] -translate-y-[10%]"
