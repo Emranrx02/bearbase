@@ -20,3 +20,20 @@ body {
 .animate-float {
   animation: bounce 3s infinite;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+.scrollAnimation {
+  animation: scroll 5s linear infinite;
+}
+
+.bg-positions {
+  background-position: 50% 100%;
+}
