@@ -46,7 +46,7 @@ export default function HeadingSection() {
       <Image
         //@ts-ignore
         ref={wave2}
-        className="absolute  h-[60rem] z-10 top-[10rem]"
+        className="absolute w-full  h-[60rem] z-10 top-[10rem]"
         src={"/wave2.png"}
         width={1920}
         height={1080}
@@ -55,10 +55,11 @@ export default function HeadingSection() {
       <Image
         //@ts-ignore
         ref={wave3}
-        className="absolute  z-20 top-[24rem]"
+        className="absolute object-cover w-full h-full  z-20 top-[24rem]"
         src={"/wave1.png"}
-        width={1920}
-        height={700}
+        width={500}
+        height={500}
+        quality={100}
         alt="wave-2"
       />
       <Heading iceBarg={iceBarg} />

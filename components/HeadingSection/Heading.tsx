@@ -17,7 +17,7 @@ export default function Heading({ iceBarg }: { iceBarg: any }) {
           height={1080}
         />
       </div>
-      <div className="flex justify-between">
+      <div className="flex sm:flex-row flex-col items-center gap-11 justify-between">
         <div className="w-80 animate-float">
           <svg
             width="100%"
