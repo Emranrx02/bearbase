@@ -8,26 +8,14 @@ import Tokenomics from "@/components/Tokenomics/Tokenomics";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [scrollPositions, setScrollPositions] = useState(0);
-  useEffect(() => {
-    const handleScroll = () => {
-      console.log(window.scrollY);
-      setScrollPositions(window.scrollY);
-    };
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <main className="">
       <NavBar />
       <HeadingSection />
       <main className="bg-[url('/water.png')] bg-cover bg-no-repeat">
-        <AboutUs scrollPositions={scrollPositions} />
-        <Tokenomics scrollPositions={scrollPositions} />
-        <Community scrollPositions={scrollPositions} />
+        <AboutUs />
+        <Tokenomics />
+        <Community />
         <Footer />
       </main>
     </main>

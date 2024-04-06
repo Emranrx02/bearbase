@@ -1,35 +1,38 @@
 "use client";
 import { useEffect, useRef } from "react";
 
-export default function Community({
-  scrollPositions,
-}: {
-  scrollPositions: number;
-}) {
+export default function AboutUs() {
   const barRef = useRef();
+
   useEffect(() => {
-    console.log(scrollPositions);
-    if (!barRef.current) return;
-    if (scrollPositions > 2600) {
-      //@ts-ignore
-      barRef.current.style.transform = `scale(${
-        1 - 200 * (scrollPositions / 1000000)
-      })`;
-    } else {
-      //@ts-ignore
-      barRef.current.style.transform = `scale(${1})`;
-    }
-  }, [scrollPositions]);
+    const handleScroll = () => {
+      let res = window.scrollY - 2600;
+      if (!barRef.current) return;
+      // const res = scrollPositions - 1600;
+      if (res > 0) {
+        //@ts-ignore
+        barRef.current.style.transform = `scale(${1 - 9 * (res / 10000)})`;
+      } else {
+        //@ts-ignore
+        barRef.current.style.transform = `scale(1)`;
+      }
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="h-[60rem]  overflow-hidden  w-full">
       <div
         //@ts-ignore
         ref={barRef}
-        className="relative ice h-full"
+        className="relative  h-full"
       >
         <svg
-          className="w-[65rem]  absolute top-[60%] left-[55%] -translate-x-[50%] -translate-y-[10%]"
+          className=" w-[65rem]  absolute top-[60%] left-[65%] -translate-x-[50%] -translate-y-[10%]"
           viewBox="0 0 630 316"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +46,8 @@ export default function Community({
             fill="black"
           ></path>
         </svg>
-        <div className="w-[60rem]  absolute top-[60%] left-[55%] -translate-x-[50%] -translate-y-[10%] ">
+
+        <div className="w-[60rem]  absolute top-[60%] left-[65%] -translate-x-[50%] -translate-y-[10%] ">
           <p className="px-56 py-16">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
             facilis sit sapiente accusantium, tenetur quam velit incidunt iste

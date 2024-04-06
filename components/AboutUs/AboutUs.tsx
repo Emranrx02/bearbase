@@ -1,25 +1,28 @@
 "use client";
-import Image from "next/image";
 import { useEffect, useRef } from "react";
 
-export default function AboutUs({
-  scrollPositions,
-}: {
-  scrollPositions: number;
-}) {
+export default function AboutUs() {
   const barRef = useRef();
+
   useEffect(() => {
-    if (!barRef.current) return;
-    if (scrollPositions > 750) {
-      //@ts-ignore
-      barRef.current.style.transform = `scale(${
-        1 - 4 * (scrollPositions / 10000)
-      })`;
-    } else {
-      //@ts-ignore
-      barRef.current.style.transform = `scale(1)`;
-    }
-  }, [scrollPositions]);
+    const handleScroll = () => {
+      let res = window.scrollY - 750;
+      if (!barRef.current) return;
+      // const res = scrollPositions - 1600;
+      if (res > 0) {
+        //@ts-ignore
+        barRef.current.style.transform = `scale(${1 - 9 * (res / 10000)})`;
+      } else {
+        //@ts-ignore
+        barRef.current.style.transform = `scale(1)`;
+      }
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="h-[60rem]  overflow-hidden  w-full">
