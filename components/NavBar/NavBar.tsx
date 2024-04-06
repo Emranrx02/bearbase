@@ -39,7 +39,9 @@ export default function NavBar() {
           <Link target="_blank" href={"https://t.me/BearsBased"}>
             <FaTelegramPlane size={40} />
           </Link>
-          <BsTwitterX size={33} />
+          <Link target="_blank" href={"https://twitter.com/BearsBased"}>
+            <BsTwitterX size={33} />
+          </Link>
         </div>
         <div className="md:hidden block">
           <Menu right>
