@@ -1,5 +1,8 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
+import { BsTwitterX } from "react-icons/bs";
+import { FaTelegramPlane } from "react-icons/fa";
 
 export default function AboutUs() {
   const barRef = useRef();
@@ -28,7 +31,10 @@ export default function AboutUs() {
   }, []);
 
   return (
-    <div id="community" className="h-[50rem]  lg:h-[60rem]   overflow-hidden  w-full">
+    <div
+      id="community"
+      className="h-[50rem]  lg:h-[60rem]   overflow-hidden  w-full"
+    >
       <div
         //@ts-ignore
         ref={barRef}
@@ -50,13 +56,13 @@ export default function AboutUs() {
           ></path>
         </svg>
 
-        <div className=" w-[60rem]  absolute top-[60%] left-[50%] lg:left-[65%] -translate-x-[50%] -translate-y-[10%] ">
-          <p className="px-56 py-16">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-            facilis sit sapiente accusantium, tenetur quam velit incidunt iste
-            unde asperiores ipsum quis saepe ex facere quia maiores laudantium
-            magni minima?
-          </p>
+        <div className=" w-[60rem]  flex justify-center  h-[20rem] absolute top-[60%] left-[50%] lg:left-[65%] -translate-x-[50%] -translate-y-[10%] ">
+          <div className="flex  items-center gap-32 space-x-1">
+            <Link target="_blank" href={"https://t.me/BearsBased"}>
+              <FaTelegramPlane size={220} />
+            </Link>
+            <BsTwitterX size={190} />
+          </div>
         </div>
       </div>
     </div>

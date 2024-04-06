@@ -1,5 +1,6 @@
 import { FaTelegramPlane } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -8,10 +9,6 @@ export default function Footer() {
         <button className="uppercase border-t-4 font-medium text-2xl border-r-8 border-b-8 border-l-4 rounded-xl border-black px-5 py-1">
           buy $BER
         </button>
-        <div className="flex  items-center gap-3 space-x-1">
-          <FaTelegramPlane size={40} />
-          <BsTwitterX size={33} />
-        </div>
       </div>
       <div className="w-[99vw] overflow-hidden">
         <div className="mt-36 overflow-hidden scrollAnimation bg-positions bg-repeat-x bg-scroll bg-[url('/cropped.png')] bg-contain h-80 -mb-10 w-[200vw]" />

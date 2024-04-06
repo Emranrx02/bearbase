@@ -49,12 +49,16 @@ export default function AboutUs() {
             fill="black"
           ></path>
         </svg>
-        <div className=" w-[60rem]  absolute top-[60%] left-[50%] lg:left-[35%] -translate-x-[50%] -translate-y-[10%] ">
+        <div className=" w-[60rem] text-center text-2xl font-medium absolute top-[60%] left-[50%] lg:left-[35%] -translate-x-[50%] -translate-y-[10%] ">
           <p className="px-56 py-16">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-            facilis sit sapiente accusantium, tenetur quam velit incidunt iste
-            unde asperiores ipsum quis saepe ex facere quia maiores laudantium
-            magni minima?
+            <span className="text-3xl uppercase font-bold">Tokenomics</span>
+            <br />
+            <br />
+            CONTRACT: 000000000000000
+            <br />
+            SUPPLY: 1.000.000.000
+            <br />
+            $BBER 90% SUPPLY IN LIQUIDITY POOL
           </p>
         </div>
       </div>

@@ -25,7 +25,10 @@ export default function AboutUs() {
   }, []);
 
   return (
-    <div id="about" className="h-[50rem] lg:h-[60rem]   overflow-hidden  w-full">
+    <div
+      id="about"
+      className="h-[50rem] lg:h-[60rem]   overflow-hidden  w-full"
+    >
       <div
         //@ts-ignore
         ref={barRef}
@@ -47,12 +50,16 @@ export default function AboutUs() {
           ></path>
         </svg>
 
-        <div className=" w-[60rem]  absolute top-[60%] left-[50%] lg:left-[65%] -translate-x-[50%] -translate-y-[10%] ">
+        <div className=" w-[60rem] text-center font-medium text-2xl  absolute top-[60%] left-[50%] lg:left-[65%] -translate-x-[50%] -translate-y-[10%] ">
           <p className="px-56 py-16">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-            facilis sit sapiente accusantium, tenetur quam velit incidunt iste
-            unde asperiores ipsum quis saepe ex facere quia maiores laudantium
-            magni minima?
+            <span className="text-3xl font-bold"> WHO ? {"I'M"} $BBER! </span>{" "}
+            <br />
+            <br />
+            {"I'm"} a cool little polar bear looking to rebuild my home and make
+            new friends on the Base Chain.
+            <br />
+            <br />
+            Buy $BBER if {"you'd"} like to support my journey!
           </p>
         </div>
       </div>

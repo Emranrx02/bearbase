@@ -111,3 +111,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
+
+.edit {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px black;
+}

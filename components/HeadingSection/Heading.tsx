@@ -35,7 +35,7 @@ export default function Heading({ iceBarg }: { iceBarg: any }) {
       </div>
 
       <div className="flex sm:flex-row flex-col items-center gap-11 justify-between">
-        <div className="w-80 animate-float">
+        <div className="w-80 relative animate-float">
           <svg
             width="100%"
             height="100%"
@@ -53,8 +53,11 @@ export default function Heading({ iceBarg }: { iceBarg: any }) {
               fill="black"
             ></path>
           </svg>
+          <h3 className="absolute uppercase text-2xl font-medium top-[35%] left-[50%] -translate-x-[50%] -translate-y-[50%] ">
+            Buy $bber
+          </h3>
         </div>
-        <div className="w-80 animate-float">
+        <div className="w-80 relative animate-float">
           <svg
             width="100%"
             height="100%"
@@ -72,6 +75,9 @@ export default function Heading({ iceBarg }: { iceBarg: any }) {
               fill="black"
             ></path>
           </svg>
+          <h3 className="absolute uppercase text-2xl font-medium top-[35%] left-[50%] -translate-x-[50%] -translate-y-[50%] ">
+            DEXSCREENER
+          </h3>
         </div>
       </div>
     </div>
