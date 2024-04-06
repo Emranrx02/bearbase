@@ -56,9 +56,9 @@ export default function AboutUs() {
             <br />
             CONTRACT: 000000000000000
             <br />
-            SUPPLY: 1.000.000.000
+            SUPPLY: 1.000.000.000 $BBER
             <br />
-            $BBER 90% SUPPLY IN LIQUIDITY POOL
+            90% SUPPLY IN LIQUIDITY POOL
           </p>
         </div>
       </div>
