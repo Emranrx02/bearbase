@@ -6,10 +6,13 @@ export default function AboutUs() {
 
   useEffect(() => {
     const handleScroll = () => {
-      let res = window.scrollY - 2600;
+      let res;
+      if (window.innerWidth < 640) res = window.scrollY - 2300;
+      else res = window.scrollY - 2600;
       if (!barRef.current) return;
       // const res = scrollPositions - 1600;
       if (res > 0) {
+        console.log(res);
         //@ts-ignore
         barRef.current.style.transform = `scale(${1 - 9 * (res / 10000)})`;
       } else {
@@ -25,7 +28,7 @@ export default function AboutUs() {
   }, []);
 
   return (
-    <div className="h-[50rem] lg:h-[60rem]   overflow-hidden  w-full">
+    <div className="h-[50rem]  lg:h-[60rem]   overflow-hidden  w-full">
       <div
         //@ts-ignore
         ref={barRef}
