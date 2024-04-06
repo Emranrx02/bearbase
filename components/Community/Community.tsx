@@ -62,7 +62,7 @@ export default function AboutUs() {
               <FaTelegramPlane className=" text-[180px] lg:text-[200px]" />
             </Link>
             <Link target="_blank" href={"https://twitter.com/BearsBased"}>
-              <BsTwitterX size={33} />
+              <BsTwitterX className="lg:text-[190px] text-[150px]" />
             </Link>
           </div>
         </div>
