@@ -50,7 +50,7 @@ export default function AboutUs() {
           ></path>
         </svg>
         <div className=" w-[60rem] text-center text-2xl font-medium absolute top-[60%] left-[50%] lg:left-[35%] -translate-x-[50%] -translate-y-[10%] ">
-          <p className="px-56 py-16">
+          <p className="px-56 py-5 lg:py-16">
             <span className="text-3xl uppercase font-bold">Tokenomics</span>
             <br />
             <br />

@@ -17,7 +17,7 @@ export default function NavBar() {
 
   return (
     <nav className="py-7 z-50 px-11 justify-between w-full items-center flex fixed">
-      <h1 className="text-5xl edit font-extrabold">$BBER</h1>
+      <h1 className=" text-4xl lg:text-5xl edit font-extrabold">$BBER</h1>
       <div className="flex text-base lg:text-lg font-bold space-x-4 lg:space-x-7 items-center">
         <div className="md:flex space-x-4 items-center hidden">
           <ul className="flex  space-x-4 lg:space-x-7 ">

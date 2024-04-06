@@ -56,12 +56,12 @@ export default function AboutUs() {
           ></path>
         </svg>
 
-        <div className=" w-[60rem]  flex justify-center  h-[20rem] absolute top-[60%] left-[50%] lg:left-[65%] -translate-x-[50%] -translate-y-[10%] ">
-          <div className="flex  items-center gap-32 space-x-1">
+        <div className=" w-[60rem]  flex justify-center h-[13rem] lg:h-[20rem] absolute top-[60%] left-[50%] lg:left-[65%] -translate-x-[50%] -translate-y-[10%] ">
+          <div className="flex  items-center gap-16 lg:gap-32 space-x-1">
             <Link target="_blank" href={"https://t.me/BearsBased"}>
-              <FaTelegramPlane size={220} />
+              <FaTelegramPlane className=" text-[180px] lg:text-[200px]" />
             </Link>
-            <BsTwitterX size={190} />
+            <BsTwitterX className="lg:text-[190px] text-[150px]" />
           </div>
         </div>
       </div>
