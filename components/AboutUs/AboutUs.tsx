@@ -25,14 +25,14 @@ export default function AboutUs() {
   }, []);
 
   return (
-    <div className="h-[60rem]  overflow-hidden  w-full">
+    <div className="h-[50rem] lg:h-[60rem]   overflow-hidden  w-full">
       <div
         //@ts-ignore
         ref={barRef}
         className="relative  h-full"
       >
         <svg
-          className=" w-[65rem]  absolute top-[60%] left-[65%] -translate-x-[50%] -translate-y-[10%]"
+          className=" w-[45rem] lg:w-[65rem]  absolute top-[60%] left-[50%] lg:left-[65%] -translate-x-[50%] -translate-y-[10%]"
           viewBox="0 0 630 316"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ export default function AboutUs() {
           ></path>
         </svg>
 
-        <div className="w-[60rem]  absolute top-[60%] left-[65%] -translate-x-[50%] -translate-y-[10%] ">
+        <div className=" w-[60rem]  absolute top-[60%] left-[50%] lg:left-[65%] -translate-x-[50%] -translate-y-[10%] ">
           <p className="px-56 py-16">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
             facilis sit sapiente accusantium, tenetur quam velit incidunt iste

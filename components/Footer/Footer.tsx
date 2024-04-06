@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="w-[99vw] overflow-hidden">
-        <div className="mt-36 overflow-hidden scrollAnimation bg-positions bg-scroll bg-[url('/bear.png')] bg-contain h-80 -mb-10 w-[200vw]" />
+        <div className="mt-36 overflow-hidden scrollAnimation bg-positions bg-repeat-x bg-scroll bg-[url('/cropped.png')] bg-contain h-80 -mb-10 w-[200vw]" />
       </div>
     </footer>
   );
