@@ -31,6 +31,7 @@ export default function HeadingSection() {
 
   return (
     <header
+      id="home"
       onMouseMove={onMouseMove}
       className="relative  w-full h-[70rem] sm:h-[60rem] overflow-hidden"
     >

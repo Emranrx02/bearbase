@@ -16,11 +16,6 @@ const inter = localFont({
       style: "normal",
     },
     {
-      path: "../public/Nippo-Light.otf",
-      weight: "300",
-      style: "light",
-    },
-    {
       path: "../public/Nippo-Medium.otf",
       weight: "500",
       style: "medium",
@@ -31,6 +26,9 @@ const inter = localFont({
 export const metadata: Metadata = {
   title: "bearbase",
   description: "A base for bear tokens",
+  icons: {
+    icon: "/ber.ico",
+  },
 };
 
 export default function RootLayout({

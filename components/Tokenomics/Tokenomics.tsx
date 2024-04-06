@@ -25,7 +25,10 @@ export default function AboutUs() {
   }, []);
 
   return (
-    <div className=" h-[50rem] lg:h-[60rem]   overflow-hidden  w-full">
+    <div
+      id="beronomics"
+      className=" h-[50rem] lg:h-[60rem]   overflow-hidden  w-full"
+    >
       <div
         //@ts-ignore
         ref={barRef}

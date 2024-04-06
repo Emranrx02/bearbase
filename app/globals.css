@@ -4,6 +4,7 @@
 
 body {
   background-color: #f8fcff;
+  scroll-behavior: smooth;
 }
 
 @keyframes bounce {

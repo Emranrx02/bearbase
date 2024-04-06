@@ -9,13 +9,6 @@ export default function Heading({ iceBarg }: { iceBarg: any }) {
       className="z-30 flex flex-col  absolute left-[50%] top-[60%] -translate-x-[50%] -translate-y-[50%] max-w-[70rem] w-full"
     >
       <div className="w-full h-96 relative mb-12 flex justify-center">
-        {/* <Image
-          src="/ber.png"
-          alt={"ber"}
-          className="w-72  animate-float"
-          width={1920}
-          height={1080}
-        /> */}
         <Image
           src="/bear.png"
           alt={"ber"}
