@@ -54,7 +54,7 @@ export default function Heading({ iceBarg }: { iceBarg: any }) {
             ></path>
           </svg>
           <h3 className="absolute uppercase text-2xl font-medium top-[35%] left-[50%] -translate-x-[50%] -translate-y-[50%] ">
-            Buy $bber
+            Buy $aub
           </h3>
         </div>
         <div className="w-80 relative animate-float">
