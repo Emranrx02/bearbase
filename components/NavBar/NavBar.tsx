@@ -36,7 +36,7 @@ export default function NavBar() {
           </button>
         </div>
         <div className="flex items-center gap-3 ">
-          <Link target="_blank" href={"#"}>
+          <Link target="_blank" href={"https://t.me/BearAura"}>
             <FaTelegramPlane size={40} />
           </Link>
           <Link target="_blank" href={"#"}>

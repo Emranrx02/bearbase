@@ -24,8 +24,8 @@ const inter = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "bearbase",
-  description: "A base for bear tokens",
+  title: "$AUB on Sol",
+  description: "The Bear with Aura",
   icons: {
     icon: "/ber.ico",
   },
