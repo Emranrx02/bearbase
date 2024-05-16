@@ -52,11 +52,11 @@ export default function AboutUs() {
 
         <div className=" w-[60rem] text-center font-medium text-xl lg:text-2xl  absolute top-[60%] left-[50%] lg:left-[65%] -translate-x-[50%] -translate-y-[10%] ">
           <p className="px-56 py-5 lg:py-16">
-            <span className="text-3xl font-bold"> WHO ? {"I'M"} $AUB! </span>{" "}
+            <span className="text-3xl font-bold"> Who ? I’m Aura Bear </span>{" "}
             <br />
             <br />
             {"I'm"} a cool little polar bear looking to rebuild my home and make
-            new friends on the Base Chain.
+            new friends on Solana Chain.
             <br />
             <br />
             Buy $AUB if {"you'd"} like to support my journey!
