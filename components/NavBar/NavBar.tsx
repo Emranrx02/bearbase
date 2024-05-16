@@ -57,7 +57,7 @@ export default function NavBar() {
               ))}
             </ul>
             <button className="uppercase mt-5 border-t-4 font-medium bg-white text-lg lg:text-2xl border-r-8 border-b-8 border-l-4 rounded-xl border-black text-black px-5 py-1">
-              buy $BER
+              buy $AUB
             </button>
           </Menu>
         </div>
